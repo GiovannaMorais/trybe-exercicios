@@ -1,0 +1,74 @@
+
+ 1221  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 12
+ 1252  # Navegue até a pasta unix_tests
+ 1253  cd unix_tests
+ 1254  
+ 1255  # Crie um arquivo texto pelo terminal com o nome skills2.txt e adicione os valores Internet , Unix e Bash , um em cada linha
+ 1256  cat > skills2.txt
+ 1257  # Adicione mais 5 itens à sua lista de skills e depois imprima a lista ordenada no terminal.
+ 1258  cat >> skills2.txt 
+ 1259  # Conte quantas linhas tem o arquivo skills2.txt 
+ 1261  wc -l skills2.txt 
+ 1262  # Crie um arquivo chamado top_skills.txt usando o skills2.txt , contendo as 3 primeiras skills em ordem alfabética
+ 1263  sort skills2.txt | head -3 | cat > top_skills.txt
+ 1264  cat top_skills.txt
+ 1265  sort < skills2.txt 
+ 1266  # Crie um novo arquivo chamado phrases2.txt pelo terminal e adicione algumas frases de sua escolha
+ 1267  cat > phrases2.txt
+ 1268  # Conte o número de linhas que contêm as letras br 
+ 1270  grep -i "br" phrases2.txt | wc -l
+ 1272  # Conte o número de linhas que não contêm as letras br
+ 1273* 
+ 1274  grep -iv "br" phrases2.txt 
+ 1275  # Adicione dois nomes de países ao final do arquivo phrases2.txt
+ 1276  cat >> phrases2.txt
+ 1277  # Crie um novo arquivo chamado bunch_of_things.txt com os conteúdos dos arquivos phrases2.txt e countries.txt
+ 1278  cat phrases2.txt countries.txt >bunch_of_things.txt
+ 1279  cat bunch_of_things.txt 
+ 1280  # Ordene o arquivo bunch_of_things.txt
+ 1281  sort < bunch_of_things.txt 
+       cd
+ 1285  # Navegue até a pasta unix_tests
+ 1286  cd unix_tests/
+ 1287  # Rode o comando ls -l e veja quais as permissões dos arquivos
+ 1288  ls -l
+ 1289  # Mude a permissão do arquivo bunch_of_things.txt para que todos os usuários possam ter acesso à leitura e escrita, e verifique se está correto com o comando ls -l
+ 1290  chmod a+rw bunch_of_things.txt 
+ 1291  ls -l
+ 1292  # Tire a permissão de escrita do arquivo bunch_of_things.txt para todos os usuários, verifique se está correto com o comando ls -l 
+ 1293  chmod a-w bunch_of_things.txt 
+ 1294  ls -l
+ 1295  # Volte à permissão do arquivo bunch_of_things.txt para a listada inicialmente utilizando o comando chmod 644 bunch_of_things.txt
+ 1296  chmod 644 bunch_of_things.txt 
+ 1297  ls -l
+ 1298  
+ /////////////////////////////////////////////////////////////////////////////////////////
+ 
+ # Liste todos os processos;
+ 1301  ps
+ 1302  # Agora use o comando sleep 30 & 
+ 1303  sleep 30 & 
+ 1304  # Use a listagem de processos para encontrar o PID do processo que está executando o comando sleep 30 e termine a sua execução (mate o processo) 
+ 1305  kill %1
+ 1306  ps
+ 1307  # Execute novamente o comando sleep 30 , mas agora sem o & . Depois, faça com que ele continue executando em background
+ 1308  sleep 30 
+ 1309  bg 
+ 1310  # Crie um processo em background que rode o comando sleep por 300 segundos
+ 1311  sleep 300 &
+ 1312  # Crie mais dois processos que rodem o comando sleep por 200 e 100 segundos, respectivamente
+ 1313  sleep 200
+ 1314  sleep 100
+ 1315  jobs
+ 1316  # Verifique que apenas o processo sleep 300 está em execução com o comando jobs . Suspenda a execução desse processo
+ 1317  jobs
+ 1318  # Retome a execução do processo sleep 100 em background com o comando bg
+ 1319  bg %4
+ 1320  # Termine a execução de todos os processos sleep (mate os processos) .
+ 1321  jobs
+ 1322  
+ 1337  kill %1
+ 1338  kill %2
+ 1339  kill %3
+ 1340  jobs

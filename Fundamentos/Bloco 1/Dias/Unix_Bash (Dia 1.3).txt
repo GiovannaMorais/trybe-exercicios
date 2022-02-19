@@ -1,0 +1,99 @@
+
+ 1108  # crie um diretório chamado unix_tests 
+ 1109  mkdir unix_tests
+ 1110  # navegue até ele 
+ 1111  cd unix_tests/
+ 1112  # Crie um arquivo de texto com o nome trybe.txt 
+ 1113  touch trybe.txt
+ 1114  # Crie uma cópia do arquivo trybe.txt com nome trybe_backup.txt
+ 1115  cp trybe.txt trybe_backup.txt
+ 1116  ls
+ 1117  # Renomeie o arquivo trybe.txt .
+ 1118  mv trybe.txt trybe
+ 1119  ls
+ 1120  # Dentro de unix_tests , crie um novo diretório chamado backup 
+ 1121  mkdir backup
+ 1122  ls
+ 1123  # Mova o arquivo trybe_backup.txt para o diretório backup
+ 1124  
+ 1125  mv trybe_backup.txt  backup
+ 1126  ls
+ 1127  # Dentro de unix_tests , crie um novo diretório chamado backup2
+ 1128  mkdir backup2
+ 1129  ls
+ 1130  # Mova o arquivo trybe_backup.txt da pasta backup para a pasta backup2
+ 1131  mv backup/trybe_backup.txt backup2
+ 1132  ls
+ 1133  cd backup2
+ 1134  ls
+ 1135  cd ../
+ 1136  # Apague a pasta backup 
+ 1137  rmdir backup
+ 1138  ls
+ 1139  # Renomeie a pasta backup2 para backup
+ 1140  mv backup2 backup
+ 1141  ls
+ 1142  # Veja qual o path completo do diretório atual e liste todos os arquivos dentro dele
+ 1143  pwd
+ 1144  ls
+ 1145  # Apague o diretório backup 
+ 1146  
+ 1149  rm -rf backup
+ 1150  ls
+       # Crie um arquivo de texto chamado skills.txt com o conteúdo abaixo:
+ 1159  # Internet 
+ 1160  # Uni
+ 1161  # Unix
+ 1162  # Bash
+ 1163  # HTML
+ 1164  # CSS
+ 1165  # JavaScript
+ 1166  # React
+ 1167  # SQL
+ 1168  cat > skills.txt
+ 1169  
+ 1173  # Mostre as 5 primeiras skills do arquivo skills.txt
+ 1174  head -5 skills.txt 
+ 1175  # Mostre na tela as 4 últimas skills do arquivo skills.txt .
+ 1176  tail -4 skills.txt 
+ 1177  # Apague todos os arquivos que terminem em .txt 
+ 1178  rm *.txt
+ 1179  ls
+        
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+       # Na pasta unix_tests , baixe um arquivo com os nomes de todos os países do mundo utilizando o comando curl:
+ 1181  # curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+ 1182  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+ 1183  
+       # Mostre todo o conteúdo do arquivo countries.txt na tela
+ 1184  cat countries.txt 
+ 1185  # Mostre todo o conteúdo do arquivo countries.txt, página por página, até encontrar a Zambia
+ 1186  less countries.txt 
+ 1187  less countries.txt | grep " Zambia"
+ 1188  # Busque por Brazil no countries.txt 
+ 1189  less countries.txt 
+ 1190  # Busque novamente por brazil , mas agora utilizando o lower case
+ 1191  grep -i "brazil" countries.txt 
+ 1192  # crie um novo arquivo chamado phrases.txt e adicione algumas frases à sua escolha
+ 1193  cat > phrases.txt
+ 1194  # Busque pelas frases que não contenham a palavra fox 
+
+ 1198  grep -iv "fox" phrases.txt 
+ 1199  # Conte o número de palavras do arquivo phrases.txt
+ 1200  wc -w phrases.txt 
+ 12    # Conte o número de linhas do arquivo phrases.txt
+ 1205  wc -l phrases.txt 
+ 1206  # Crie os arquivos empty.tbt e empty.pdf 
+ 1208  touch empty.tbt empty.pdf
+ 1209  ls
+ 1210  # Liste todos os arquivos do diretório unix_tests 
+ 1211  ls
+ 1212  # Liste todos os arquivos que terminem com txt
+ 1213  ls *.txt
+ 1214  # Liste todos os arquivos que terminem com tbt ou txt
+ 1215  ls *.t?t
+ 1216  # Acesse o manual do comando ls 
+ 1217  ls
+ 1218  
+ 122
