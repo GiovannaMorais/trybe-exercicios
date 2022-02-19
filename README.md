@@ -1,6 +1,6 @@
 # Trybe
 
-Este repositório conta todas as atividades de aprendizagem desenvolvidas por [Marcos Ridley](https://www.linkedin.com/in/MarcosRidley) enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
+Este repositório conta todas as atividades de aprendizagem desenvolvidas por [Giovanna Morais](https://www.linkedin.com/in/giovanna-gomes-alves-de-morais-7aa3269a/) enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia."_
 
