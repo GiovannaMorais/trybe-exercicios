@@ -1,0 +1,35 @@
+h1{
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+.fundo{
+    background-color: blueviolet;
+    font-style:italic
+    
+}
+p{
+    font-weight: 600;
+    font-size: 3em;;
+}
+body{
+    font-size: 16px;
+    font-style: italic;
+}   
+
+ ul{
+     
+     text-align:inherit;
+    line-height:calc(4)
+    
+ }
+ #Amarelo{
+     background-color: yellow;
+ }
+ #Vermelho{
+     background-color: red;
+ }
+ #Marrom{
+     background-color: brown;
+ }
