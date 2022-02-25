@@ -1,0 +1,32 @@
+div{
+    border:  solid gray;
+}
+h3:hover#primaria{
+    border: solid rgb(255, 11, 174);
+    background-color: rgb(214, 113, 185);
+    font-style: italic;
+}
+h3:hover#secundaria{
+    border:solid rgb(175, 0, 245);
+    background-color: rgb(171, 105, 197);
+}
+h3:hover#complementar{
+    border: 25px solid rgb(0, 64, 255);
+    padding: 50px;
+    background-color: rgb(77, 114, 226);
+    font-style: italic;
+}
+h3:hover#escura{
+    border:solid rgb(0, 255, 0);
+    background-color: rgb(161, 248, 161);
+
+}
+h3:hover#clara{
+    border:solid rgb(255, 255, 2);
+    background-color: rgb(247, 247, 157);
+    font-style: italic;
+}
+
+#primaria,#complementar,#clara {
+    font-style: italic;
+}
