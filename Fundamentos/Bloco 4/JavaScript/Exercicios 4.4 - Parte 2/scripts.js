@@ -88,5 +88,5 @@ function verificarPalavra (palavras,letras){
     }return verificaçao;
 
 }console.log(verificarPalavra('trybe', 'be'));
-
+console.log(verificarPalavra('joaofernando', 'fernan'));
 
