@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const elementoH1 = document.createElement("h1");
+      elementoH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      elementoH1.className="title"
+      document.body.appendChild(elementoH1)
+
+      const elementoMain = document.createElement("main");
+      elementoMain.className="main-content";
+      document.body.appendChild(elementoMain);
+
+      const elementoSection = document.createElement("section");
+      elementoSection.className="center-content";
+      elementoMain.appendChild(elementoSection);
+
+      const elementoP = document.createElement("p");
+      elementoP.innerText="Life is worth is living";
+     elementoSection.appendChild(elementoP);
+
+     const elementoSectionn = document.createElement("section");
+      elementoSectionn.className="left-content";
+      elementoMain.appendChild(elementoSectionn);
+
+
+
+     const elementoSection2 = document.createElement("section");
+      elementoSection2.className="right-content";
+      elementoMain.appendChild(elementoSection2);
+
+        const photo = document.createElement("img");
+        photo.className="small-image ";
+        photo.src = 'https://picsum.photos/200'
+        elementoSection2.appendChild(photo)
+
+        const ordList = document.createElement("ul");
+        elementoSection2.appendChild(ordList)
+
+        const numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez']
+        for(index in numbers){
+            const lista = document.createElement("li");
+            lista.innerText = numbers[index];
+            ordList.appendChild(lista)
+        }
+
+        const elementoH3=document.createElement("h3");
+        elementoH3.className="description "
+      elementoMain.appendChild(elementoH3);
+
+      const elementoH31=document.createElement("h3");
+      elementoH31.className="description "
+      elementoMain.appendChild(elementoH31);
+
+      const elementoH32=document.createElement("h3");
+      elementoH32.className="description "
+      elementoMain.appendChild(elementoH32);
+
+
+      const removerSectionn = document.getElementsByClassName('left-content')[0]
+      elementoMain.removeChild( elementoSectionn)
+
+        const center =  document.getElementsByClassName('right-content')[0];
+        elementoSection2.style.marginRight='auto';
+
+        const background=document.getElementsByClassName('center-content')[0];
+        elementoSection.parentNode.style.background = "purple"
+
+       let removeListItens= ordList.lastChild.remove()
+                            ordList.lastChild.remove()
+    </script>
+  </body>
+</html>
