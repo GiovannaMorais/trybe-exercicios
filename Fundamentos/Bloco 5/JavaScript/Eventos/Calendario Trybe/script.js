@@ -135,6 +135,8 @@ function action (açao){
 
 action("cozinhar");
 
+
+
 function Colors (color){
     let div = document.createElement("div")
     let divContainer = document.querySelector(".my-tasks");     
@@ -177,6 +179,37 @@ function diaCor(){
    })
 }
 diaCor();
+
+function compromisso (){
+    let comp = document.querySelector("#task-input");
+    let compButton = document.querySelector("#btn-add")
+    let listComp = document.querySelector(".task-list")
+    
+    compButton.addEventListener("click",function(){ 
+        if(comp.value.length > 0){
+            let lista = document.createElement("li");
+            lista.innerText=comp.value;
+
+            listComp.appendChild(lista)
+            listComp.value=" ";
+        }else {
+            alert("ERROR : DIGITE ALGUM COMPRIMISSO")
+        }
+
+})
+
+    comp.addEventListener("keyup",function(event){
+        if(event.key === 'Enter' && comp.value.length > 0){
+            let lista = document.createElement("li");
+            lista.innerText=comp.value;
+             
+            listComp.appendChild(lista)
+            listComp.value=" ";
+
+        }
+
+    });
+}compromisso()
 
 
 
