@@ -137,6 +137,7 @@ action("cozinhar");
 
 
 
+
 function Colors (color){
     let div = document.createElement("div")
     let divContainer = document.querySelector(".my-tasks");     
