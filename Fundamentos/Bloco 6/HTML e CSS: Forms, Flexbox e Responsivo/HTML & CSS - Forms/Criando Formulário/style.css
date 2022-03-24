@@ -1,12 +1,22 @@
+body{
+    background-image:url(https://i.pinimg.com/originals/14/57/18/1457181975ba7106c730c615c9808f77.jpg);
+}
+
 h1{
     text-align: center;
     font-size: 50px;
+    background-color:black;
+    color: white;
+    margin:40px auto;
+    padding: 40px;
+    width: 40%;
 }
 label{
     font-size: 20px;
     padding-bottom: 10px;
     display: inline-block;
     padding-top: 10px;
+    
 }
 input{
     color: blue;
@@ -23,6 +33,7 @@ input{
     border-radius: 28%;
     font-size: 22px;
     margin-top: 40px;
+    padding: 10px;
 }
 #submit{
     
@@ -31,7 +42,25 @@ input{
     font-size: 22px;
     margin-top: 40px;
     margin-right: 20px;
+    padding: 10px;
 }
 .container{
     margin-top: 20px;
+    text-align: center;
+    background-color:black;
+    color: white;
+    margin:40px auto;
+    padding: 40px;
+    width: 40%;
+    border-radius: 40px;
+}
+
+#textarea{
+    border: 1px solid white;
+}
+
+.buttons{
+   height: 80px;
+   width: 300px;
+   padding-top: 1px;
 }

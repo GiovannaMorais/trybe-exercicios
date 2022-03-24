@@ -12,63 +12,64 @@
       <h1>Formulário</h1>
     </header>
     <form action="" method="get">
-      <div>
+      <div class="container nomemail">
         <label for="">Nome Completo:</label>
         <input id="nome" type="text" minlength="10" maxlength="40" required />
         <br />
         <label for="">E-mail:</label>
-        <input id="email" type="email" minlength="10" maxlength="50" required  />
+        <input id="email" type="email" minlength="10" maxlength="50" required />
         <br />
       </div>
       <div class="container">
         <label for="destino-preferido"> Destino Preferido:</label> <br />
-        <label for="cidade"
-          >Cidade <input type="radio" name="destino" id="cidade"
-        /></label>
-        <label for="campo"
-          >Campo <input type="radio" name="destino" id="campo"
-        /></label>
-        <label for="praia"
-          >Praia <input type="radio" name="destino" id="praia"
-        /></label>
-        <label for="montanhas"
-          >Montanhas <input type="radio" name="destino" id="montanhas"
-        /></label>
+        <label for="cidade">Cidade </label>
+        <input type="radio" name="destino" id="cidade" />
+        <label for="campo">Campo</label>
+        <input type="radio" name="destino" id="campo" />
+        <label for="praia">Praia</label>
+        <input type="radio" name="destino" id="praia" />
+
+        <label for="montanhas">Montanhas</label>
+        <input type="radio" name="destino" id="montanhas" />
       </div>
       <br />
-      <div>
-        <p required 
-          >Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
-          TrybeTrip?</p>
-          <textarea
-            name="resposta"
-            id="textarea"
-            cols="30"
-            rows="10"
-            maxlength="500"
-            placeholder="Digite sua resposta"
-          ></textarea>
+      <div class="container">
+        <p required>
+          Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
+          TrybeTrip?
+        </p>
+        <textarea
+          name="resposta"
+          id="textarea"
+          cols="30"
+          rows="10"
+          maxlength="500"
+          placeholder="Digite sua resposta"
+        ></textarea>
       </div>
-      <p>Qual a melhor data para realizar sua viagem?</p>
+      <div class="container">
+       
+        <span>Qual a melhor data para realizar sua viagem?</span>  <br>
+        <input type="date" name="data" id="date" /> <br />
+      </div>
 
-      <label for="date"
-        >Data:
-        <input type="date" name="data" id="date" />
-      </label><br>
-      <div class="permiçoes">
-      <label for="notificar">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
-          <input type="checkbox" name="notificao" id="notificar">
-      </label>
-      <br>
+      <div class="permiçoes container">
+        <label for="notificar">
+          <input type="checkbox" name="notificao" id="notificar" />
+          Gostaria de receber outras incríveis oportunidades oferecidas pela
+          Trybe?
+        </label>
 
-      <label for="concordo">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-        <input type="checkbox"  name="permicao" id="concordo">
-    </label>
-    </div>
-    <div class="buttons">
-    <button id= "submit"type="submit" disabled >Enviar</button>
-    <button id= "limpar"type="">Limpar</button>
-</div>
+        <label for="concordo">
+          <input type="checkbox" name="permicao" id="concordo" />
+          Concordo que imagens das minhas férias poderão ser usadas na
+          divulgação de concursos futuros.
+        </label>
+      </div>
+      <div class="buttons container">
+        <button id="submit" type="submit" disabled>Enviar</button>
+        <button id="limpar" type="">Limpar</button>
+      </div>
     </form>
 
     <script src="script.js"></script>
