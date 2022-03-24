@@ -14,10 +14,10 @@
     <form action="" method="get">
       <div>
         <label for="">Nome Completo:</label>
-        <input type="text" minlength="10" maxlength="40" required />
+        <input id="nome" type="text" minlength="10" maxlength="40" required />
         <br />
         <label for="">E-mail:</label>
-        <input type="email" minlength="10" maxlength="50" required  />
+        <input id="email" type="email" minlength="10" maxlength="50" required  />
         <br />
       </div>
       <div class="container">
@@ -62,11 +62,11 @@
       <br>
 
       <label for="concordo">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-        <input type="checkbox" name="permicao" id="concordo">
+        <input type="checkbox"  name="permicao" id="concordo">
     </label>
     </div>
     <div class="buttons">
-    <button id= "submit"type="submit">Enviar</button>
+    <button id= "submit"type="submit" disabled >Enviar</button>
     <button id= "limpar"type="">Limpar</button>
 </div>
     </form>
