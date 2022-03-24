@@ -129,11 +129,12 @@ function action (açao){
     let span = document.createElement("span")
     let spanContainer = document.querySelector(".my-tasks");     
 
-    span.innerHTML=açao;
+    span.innerHTML=açao + "\n";
     spanContainer.appendChild(span)
 }
 
 action("cozinhar");
+
 
 
 
