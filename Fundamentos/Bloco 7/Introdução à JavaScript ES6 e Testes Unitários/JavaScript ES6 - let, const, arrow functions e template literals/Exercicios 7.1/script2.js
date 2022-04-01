@@ -26,3 +26,8 @@ return result
 
 }
 console.log(string('Antônio foi no banheiro e não sabemos o que aconteceu'))
+
+
+// const longestWord = frase => frase.split(' ').sort((wordA, wordB) => wordB.length - wordA.length)[0];
+
+// console.log(longestWord("Antonio foi no banheiro e não sabemos o que aconteceu"));
