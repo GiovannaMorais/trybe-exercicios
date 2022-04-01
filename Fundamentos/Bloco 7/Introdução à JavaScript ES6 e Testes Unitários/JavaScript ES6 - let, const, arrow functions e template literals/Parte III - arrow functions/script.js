@@ -1,16 +1,16 @@
-const printName = function () {
-    const myName = 'Lucas';
-    return myName;
-  };
+// const printName = function () {
+//     const myName = 'Lucas';
+//     return myName;
+//   };
   
-  console.log(printName());
+//   console.log(printName());
 
-  const printName = () => {
-    const myName = 'Lucas';
-    return myName;
-  };
+  // const printName = () => {
+  //   const myName = 'Lucas';
+  //   return myName;
+  // };
   
-  console.log(printName());
+  // console.log(printName());
 
   const printName = () => 'Lucas';
 console.log(printName());
