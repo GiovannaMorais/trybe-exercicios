@@ -63,7 +63,7 @@ const books = [
   
   // Adicione o código do exercício aqui:
   const expectedResult = false;
-
+//  console.log(!books); 
 function authorUnique() {
  return books.every((mesmoAno) => {
    !books.some((some)=>{
