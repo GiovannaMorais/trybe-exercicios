@@ -9,5 +9,5 @@ test("Não deveria passar!", (done) => {
     } catch (error) {
       done(error);
     }
-  }, 500);
+  },500);
 });
