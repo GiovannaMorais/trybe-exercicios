@@ -1,0 +1,21 @@
+// apiScript.js     
+const API_URL = 'https://icanhazdadjoke.com/';
+
+const fetchJoke = () => {
+  const myObject = {
+    method: 'GET',
+    headers: { 'Accept': 'application/json' }
+  };
+
+  fetch(API_URL, myObject)
+    .then(response => response.json())
+    .then(data => jokes.innerText = data.joke);
+
+
+const jokes = document.getElementById('jokeContainer')
+
+};
+
+
+
+window.onload = () => fetchJoke();
