@@ -1,16 +1,18 @@
 import React from 'react';
 import './App.css';
-// import Pokemon from './Pokemon.js';
+import Pokemon from './Pokemon.js';
 import pokemons from './data.js';
-import Pokedex from './Pokedex.js';
+import './index.css';
+// import Pokedex from './Pokedex.js';
 
 class App extends React.Component {
 render() {
   return (
-    <div>
+    <div >
       <h1> Pokedex </h1>
-      <p> <Pokedex pokemons={pokemons} /></p>
-      
+      <p className ='pokedex' >{pokemons.map(poke => <Pokemon key={poke.id} pokemons={poke} />)}
+      {/* <p> <Pokedex pokemons={pokemons} /></p> */}
+    </p>
     </div>
   );
 }
