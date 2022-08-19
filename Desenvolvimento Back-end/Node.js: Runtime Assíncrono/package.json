@@ -1,0 +1,19 @@
+{
+  "name": "my-scripts",
+  "version": "1.0.0",
+  "description": "Calcular o IMC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bmi": "node bmi.js",
+    "sim": "node simpson.js",
+    "bonus": "node bonus.js",
+    "fibonacci":"node fibonacci.js"
+
+  },
+  "author": "Giovanna",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
